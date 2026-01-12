@@ -551,12 +551,13 @@
         // ==================== 카테고리별 데이터 ====================
         // ==================== 카테고리별 데이터 (수정됨) ====================
         // ==================== 카테고리별 데이터 (최종 수정됨) ====================
+        // ==================== 카테고리별 데이터 (경로 수정 완료) ====================
         const categoryData = {
             corner: {
                 title: '코너킥 분석',
                 subtitle: '호모그래피 기반 히트맵 오버레이',
-                rawVideo: 'videos/corner_raw.mp4',
-                aiVideo: 'videos/corner_final.mp4',
+                rawVideo: 'corner_raw.mp4',      // videos/ 제거함
+                aiVideo: 'corner_final.mp4',     // videos/ 제거함
                 description: 'OpenCV 호모그래피 기술을 사용하여 실제 경기장 위에 전술 데이터를 시각화했습니다:',
                 features: [
                     '🗺️ <strong>호모그래피 매핑:</strong> 2D 히트맵을 3D 경기장 시점으로 변환하여 투영',
@@ -568,8 +569,8 @@
             freekick: {
                 title: '프리킥/크로스',
                 subtitle: '크로스 궤적 및 낙하 지점 예측',
-                rawVideo: 'videos/freekick_raw.mp4',
-                aiVideo: 'videos/freekick_final.mp4',
+                rawVideo: 'freekick_raw.mp4',
+                aiVideo: 'freekick_final.mp4',
                 description: '프리킥 상황에서 크로스가 주로 떨어지는 위험 지역을 분석하여 시각화했습니다:',
                 features: [
                     '🔥 <strong>크로스 타겟 존:</strong> 득점으로 연결될 확률이 높은 낙하 지점 강조',
@@ -582,8 +583,8 @@
             directfreekick: {
                 title: '직접 프리킥 분석',
                 subtitle: 'VAEP 기반 득점 확률 및 궤적 분석',
-                rawVideo: 'videos/directfreekick_raw.mp4',
-                aiVideo: 'videos/directfreekick_final.mp4',
+                rawVideo: 'directfreekick_raw.mp4',
+                aiVideo: 'directfreekick_final.mp4',
                 description: '프리킥 위치에 따라 <strong>어느 코스로 찼을 때 가장 위협적인가(VAEP)</strong>를 분석했습니다:',
                 features: [
                     '📊 <strong>VAEP 지표 산출:</strong> 단순 득점 확률을 넘어, 해당 슈팅이 득점에 기여하는 가치(Value) 평가',
@@ -595,8 +596,8 @@
             throwin: {
                 title: '롱 스로인',
                 subtitle: '득점 확률 기반 투척 지점 분석',
-                rawVideo: 'videos/throwin_raw.mp4',
-                aiVideo: 'videos/throwin_final.mp4',
+                rawVideo: 'throwin_raw.mp4',
+                aiVideo: 'throwin_final.mp4',
                 description: '롱 스로인 시 <strong>"어디에 던져야 득점 확률이 높은가"</strong>를 직관적으로 제시합니다:',
                 features: [
                     '🔴 <strong>Red Zone (골 확률↑):</strong> 득점으로 연결될 확률이 가장 높은 핵심 낙하 지점',
@@ -608,8 +609,8 @@
             pass: {
                 title: '패스 성공률 분석',
                 subtitle: '시즌 데이터 기반 예측 모델',
-                rawVideo: 'videos/pass_raw.mp4',
-                aiVideo: 'videos/pass_final.mp4',
+                rawVideo: 'pass_raw.mp4',
+                aiVideo: 'pass_final.mp4',
                 description: '시즌 전체 데이터를 분석하여, 리플레이 장면에서 해당 패스의 성공 확률을 보여줍니다:',
                 features: [
                     '📚 <strong>시즌 데이터 학습:</strong> 한 시즌의 패스 데이터를 모두 분석해 도출한 결과',
@@ -621,8 +622,8 @@
             alert: {
                 title: '실시간 중계 전환 알림',
                 subtitle: '타 구장 흥미도 기반 자동 알림',
-                rawVideo: 'videos/alert_raw.mp4',
-                aiVideo: 'videos/alert_final.mp4',
+                rawVideo: 'alert_raw.mp4',
+                aiVideo: 'alert_final.mp4',
                 description: '동시간대 다른 경기장에서 득점 기회 등 흥미로운 상황 발생 시 알림을 제공합니다:',
                 features: [
                     '🔔 <strong>팝업 알림(Toast):</strong> "꿀잼 경기" 발생 시 우측 상단 알림 노출',
